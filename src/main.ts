@@ -10,3 +10,10 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+
+import PubSub from '@aws-amplify/pubsub';
+import API from '@aws-amplify/api';
+import awsconfig from './aws-exports';
+Amplify.configure(config)
